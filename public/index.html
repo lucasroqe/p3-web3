@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reservas de Restaurante</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Gerenciamento de Reservas</h2>
+
+    <form id="form-item">
+      <input type="text" id="nomeCliente" placeholder="Nome do Cliente" required />
+      <input type="number" id="numeroMesa" placeholder="Número da Mesa" required />
+      <input type="datetime-local" id="dataHoraReserva" required />
+      <select id="status">
+        <option value="reservado">Reservado</option>
+        <option value="ocupado">Ocupado</option>
+        <option value="disponível">Disponível</option>
+      </select>
+      <input type="text" id="contatoCliente" placeholder="Contato" required />
+      <button type="submit" class="btn-adicionar">Adicionar</button>
+    </form>
+
+    <input type="text" id="busca" placeholder="Buscar por cliente" />
+    <button onclick="buscarReservas()" class="btn-buscar">Buscar</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Mesa</th>
+          <th>Data/Hora</th>
+          <th>Status</th>
+          <th>Contato</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="lista-reservas"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

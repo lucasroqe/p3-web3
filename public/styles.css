@@ -1,0 +1,75 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-adicionar {
+    background-color: rgb(7, 172, 7);
+}
+
+.btn-editar {
+    background-color: #007bff;
+}
+
+.btn-deletar {
+    background-color: red;
+}
+
+.btn-buscar {
+    background-color: rgb(62, 62, 209);
+}
+
+.btn-atualizar {
+    background-color: rgb(221, 135, 65);
+}
+
+#busca {
+    margin-top: 10px;
+    min-width: 250px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #e9ecef;
+}
